@@ -15,7 +15,7 @@
 
 body{
     background-color: rgb(20, 36, 36);
-    background-image: url("Images/backgroundmainimage.jpg");
+    background-image: url("Images/backgroundmainimage.jpeg");
     background-size: cover;
 }
 
@@ -55,17 +55,21 @@ body{
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: "Oswald",sans-serif;
 }
 
 nav a:hover{
+    color: rgb(161, 20, 20);
+}
+
+nav p{
     color: rgb(161, 20, 20);
 }
 
@@ -76,7 +80,7 @@ nav a:hover{
     min-height: 75vh;
     background-image: 
     linear-gradient(90deg,rgba(0,0,0,0.9)0%,rgba(0,0,0,0.70)55%,rgba(0,0,0,0.15)100%),
-    url("Images/heroimage.jpg");
+    url("Images/heroimage.jpeg");
     background-size: cover;
     background-position: center;
     padding: 3rem 3%;
@@ -119,7 +123,7 @@ nav a:hover{
     color:white;
     border: none;
     font-family: "Bebas Neue",sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -130,6 +134,21 @@ nav a:hover{
     box-shadow: 0 5px 20px rgba(24, 24, 24, 0.55);
 }
 
+/*Why join us section------------------------------------------------------------------*/
+
+.whyjoinus{
+    background-color: black;
+    background: linear-gradient(rgba(160, 10, 10, 0.4)0%,rgba(0,0,0,1)80%);
+    padding: 20px;
+    color:white;
+    font-family: "Oswald",sans-serif;
+    border-top:5px solid black;
+    border-bottom:5px solid black;
+}
+.whyjoinus h1{
+    color:rgba(182,5,5);
+    font-family: "Bebas Neue",sans-serif;
+}
 /*Student quickportal section----------------------------------------------------------*/
 
 .studentquickportal{
@@ -139,6 +158,8 @@ nav a:hover{
     color:rgb(182, 5, 5);
     font-family: "Bebas Neue",sans-serif;
     font-size: large;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-left: 10px solid rgba(172, 23, 23, 0.8);
 }
 .studentquickportal p{
     color: rgb(253, 57, 57);
@@ -149,6 +170,9 @@ nav a:hover{
     padding-top: 20px;
     display:flex;
     gap:20px;
+}
+.portalstuff h3{
+    font-size: x-large;
 }
 
 .portalstuff img{
