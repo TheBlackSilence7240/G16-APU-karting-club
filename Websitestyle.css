@@ -241,3 +241,58 @@ nav p{
     object-fit: cover;
     display: block;
 }
+
+/*footer*/
+.sitefooter{
+    background-image: url(Images/navbarbg.png);
+    color:white;
+    padding: 40px 6% 15px;
+    font-family: "Oswald",sans-serif;
+}
+
+.footercontent{
+    display:flex;
+    justify-content: space-between;
+    gap:40px;
+}
+
+.footersection{
+    flex:1;
+}
+
+.footersection h3 {
+    color: rgb(182, 5, 5);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.footersection p {
+    margin-bottom: 8px;
+}
+
+.footersection a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footersection a:hover {
+    color: rgb(216, 5, 5);
+}
+
+.footerbottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(80, 80, 80);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footerlogo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
