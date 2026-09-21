@@ -144,6 +144,7 @@ nav p{
     font-family: "Oswald",sans-serif;
     border-top:5px solid black;
     border-bottom:5px solid black;
+    padding-bottom: 50px;
 }
 .whyjoinus h1{
     color:rgba(182,5,5);
@@ -155,6 +156,7 @@ nav p{
     padding-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 50px;
     color:rgb(182, 5, 5);
     font-family: "Bebas Neue",sans-serif;
     font-size: large;
@@ -203,4 +205,39 @@ nav p{
 
 .portalcontent p{
     color: white;
+    padding:7px;
+}
+
+/*Highlights section*/
+.highlights{
+    margin-top:5px;
+    padding-top: 25px;
+    background-color: black;
+    background: linear-gradient(90deg,rgba(182,5,5,0.9)30%,rgba(0,0,0)100%);   
+}
+.highlights h1{
+    color:rgb(0, 0, 0);
+    font-family: "Bebas Neue",sans-serif;
+    padding-left: 25px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+}
+.highlights p{
+    color:rgb(255, 255, 255);
+    font-family: "Oswald",sans-serif;
+    padding-left: 25px;
+    font-size: xx-large;
+    padding-top: 10px;
+}
+.highlightcontainer{
+    padding: 25px;
+    align-items:center;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap:30px;
+}
+.highlightcontainer img{
+    width: 30vw;
+    height: 20vw;
+    object-fit: cover;
+    display: block;
 }
