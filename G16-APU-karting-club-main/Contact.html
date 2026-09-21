@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karting Club - Contact Us</title>
+    <link href="Websitestyle.css" rel="stylesheet" type="text/css">
+
+    <!-- Page-sameish styling to (Websitestyle.css) -->
+    <style>
+        .contact-hero {
+            width: 100%;
+            min-height: 40vh;
+            background-image:
+                linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0) 100%),
+                url("Images/heroimage.jpeg");
+            background-size: cover;
+            background-position: center 30%;
+            padding: 3rem 4%;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-hero-content {
+            color: white;
+            font-family: "Oswald", sans-serif;
+            border-left: 5px solid rgb(161, 20, 20);
+            padding-left: 20px;
+        }
+
+        .contact-hero-content h6 {
+            color: rgb(255, 90, 90);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0 0 0.25rem;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-hero-content h1 {
+            color: rgb(255, 45, 45);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-wrap {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-left: 10px solid rgba(172, 23, 23, 0.8);
+            padding: 50px 25px 70px;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .contact-intro {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .contact-intro p {
+            color: rgb(253, 57, 57);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            flex: 1;
+            min-width: 220px;
+            border: 5px solid rgb(161, 20, 20);
+            background: rgb(34, 34, 34);
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 3px 10px red;
+        }
+
+        .contact-card .icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-card .contact-icon {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .contact-card h3 {
+            color: rgba(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: white;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .contact-card a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--Navigation bar stuff (same structure/classes as MainPage.html so it can match)-->
+    <header class="siteheader">
+        <a class="NavLogo" href="MainPage.html">
+            <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+            <span>APU Karting Club</span>
+        </a>
+    <nav>
+        <a href="MainPage.html"><b>Home</b></a>
+        <p> | </p>
+        <a href="about.html"><b>About</b></a>
+        <p> | </p>
+        <a href="facilities.html"><b>Facilities</b></a>
+        <p> | </p>
+        <a href="mission.html"><b>Mission</b></a>
+        <p> | </p>
+        <a href="events.html"><b>Events</b></a>
+        <p> | </p>
+        <a href="registration.html"><b>Registration</b></a>
+        <p> | </p>
+        <a href="Contact.html"><b>Contact</b></a>
+    </nav>
+    </header>
+
+<main>
+    <!--Hero-style banner, matches MainPage hero look-->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h6>Got questions? We've got answers:</h6>
+            <h1><i>GET IN TOUCH</i></h1>
+        </div>
+    </section>
+
+    <!--Contact details-->
+    <section class="contact-wrap">
+        <div class="contact-intro">
+            <p>
+                Interested in joining Karting Club? Just hit us up
+                through the details below — we'd love to have you on the track.
+            </p>
+        </div>
+
+        <div class="contact-cards">
+            <div class="contact-card">
+                <img src="Images/email.PNG" alt="Email" class="contact-icon">
+                <h3>Email</h3>
+                <p>apukarting@apu.edu.my</p>
+            </div>
+
+            <div class="contact-card">
+                <img src="Images/instagram.jpg" alt="Instagram" class="contact-icon">
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/apu.karting/" target="_blank" rel="noopener">@apu.karting</a></p>
+            </div>
+
+            <div class="contact-card">
+                <span class="icon">🏁</span>
+                <h3>Advisor</h3>
+                <p>Justin Gilbert Alexius Silvester</p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
