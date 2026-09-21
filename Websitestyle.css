@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+/*Used to get rid of the annoying edges---------------------------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Background stuff-------------------------------------------------------------------*/
+
+body{
+    background-color: rgb(20, 36, 36);
+    background-image: url("Images/backgroundmainimage.jpg");
+    background-size: cover;
+}
+
+/*Nav bar no shit sherlock----------------------------------------------------------*/
+
+.siteheader {
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 4%;
+    background:black;
+    background-image: url(Images/navbarbg.png);
+    font-family: "Oswald",sans-serif;
+}
+
+.NavLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.NavLogo:hover{
+    color: rgb(161, 20, 20);
+}
+.NavLogo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: "Oswald",sans-serif;
+}
+
+nav a:hover{
+    color: rgb(161, 20, 20);
+}
+
+/*Hero Image-----------------------------------------------------------------------*/
+
+.hero{
+    width: 100%;
+    min-height: 75vh;
+    background-image: 
+    linear-gradient(90deg,rgba(0,0,0,0.9)0%,rgba(0,0,0,0.70)55%,rgba(0,0,0,0.15)100%),
+    url("Images/heroimage.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 3%;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+.hero-content{
+    color: white;
+    text-align: left;
+    line-height: 2;
+    font-family: "Oswald",sans-serif;
+    font-size:large;
+}
+.hero-content h1{
+    color:rgb(182, 5, 5);
+    font-family: "Bebas Neue",sans-serif;
+    border-left: 5px solid rgb(161, 20, 20);
+    padding-left: 20px;
+}
+.hero-content h6{
+    color:rgb(253, 57, 57);
+    font-family: "Oswald",sans-serif;
+    font-size:small;
+    border-left: 5px solid rgb(161, 20, 20);
+    padding-left: 20px;
+}
+.hero-content p{
+    color: white;
+    font-family: "Oswald",sans-serif;
+    font-size:medium;
+    border-left: 5px solid rgb(161, 20, 20);
+    padding-left: 20px;
+}
+.hero-content button{
+    margin-top: 75px;
+    padding: 12px 30px;
+    background:rgb(253, 57, 57);
+    color:white;
+    border: none;
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover{
+    background-color: rgb(253, 57, 57);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(24, 24, 24, 0.55);
+}
+
+/*Student quickportal section----------------------------------------------------------*/
+
+.studentquickportal{
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:rgb(182, 5, 5);
+    font-family: "Bebas Neue",sans-serif;
+    font-size: large;
+}
+.studentquickportal p{
+    color: rgb(253, 57, 57);
+    font-family: "Oswald",sans-serif;
+}
+.portalstuff{
+
+    padding-top: 20px;
+    display:flex;
+    gap:20px;
+}
+
+.portalstuff img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.portalcontent{
+    border: 5px solid rgb(161, 20, 20);
+    background:rgb(34, 34, 34);
+    flex:1;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.portalcontent p{
+    color: white;
+}
