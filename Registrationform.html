@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karting Club - Registration</title>
+
+    <link rel="stylesheet" href="Websitestyle.css">
+
+    <style>
+
+        .registration-hero {
+            width: 100%;
+            min-height: 35vh;
+            background-image:
+                linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.60) 50%, rgba(0,0,0,0.10) 100%),
+                url("Images/heroimage.jpeg");
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 5%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .registration-hero-content {
+            color: white;
+            font-family: "Oswald", sans-serif;
+            margin-left: 10px;
+        }
+
+        .registration-hero-content h6 {
+            color: rgb(253, 57, 57);
+            font-size: 1rem;
+            border-left: 5px solid rgb(161, 20, 20);
+            padding-left: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        .registration-hero-content h1 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 3.5rem;
+            border-left: 5px solid rgb(161, 20, 20);
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .registration-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-left: 10px solid rgba(172, 23, 23, 0.8);
+            padding: 50px 25px 70px;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .registration-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgb(34, 34, 34);
+            border: 5px solid rgb(161, 20, 20);
+            padding: 35px;
+            box-sizing: border-box;
+        }
+
+        .registration-card h2 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .registration-card label {
+            display: block;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .registration-card input,
+        .registration-card select,
+        .registration-card textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            background: rgb(20, 20, 20);
+            color: white;
+            border: 2px solid rgb(161, 20, 20);
+            font-family: "Oswald", sans-serif;
+        }
+  .registration-card input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+        }
+
+
+        .registration-card textarea {
+            resize: vertical;
+        }
+
+        .registration-card button {
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: rgb(161, 20, 20);
+            color: white;
+            border: none;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .registration-card button:hover {
+            background: rgb(182, 5, 5);
+        }
+
+        .site-footer {
+            background: #080808;
+            border-top: 4px solid rgb(161, 20, 20);
+            color: white;
+            font-family: "Oswald", sans-serif;
+            padding: 35px 5% 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .footer-logo h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .footer-contact {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 25px;
+            padding: 15px 0;
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="siteheader">
+
+        <a class="NavLogo" href="MainPage.html">
+            <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+            <span>APU Karting Club</span>
+        </a>
+
+        <nav>
+            <a href="MainPage.html"><b>Home</b></a>
+            <p>|</p>
+
+            <a href="about.html"><b>About</b></a>
+            <p>|</p>
+
+            <a href="facilities.html"><b>Facilities</b></a>
+            <p>|</p>
+
+            <a href="mission.html"><b>Mission</b></a>
+            <p>|</p>
+
+            <a href="events.html"><b>Events</b></a>
+            <p>|</p>
+
+            <a href="registration.html"><b>Registration</b></a>
+            <p>|</p>
+
+            <a href="Contact.html"><b>Contact</b></a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="registration-hero">
+
+            <div class="registration-hero-content">
+
+                <h6>Ready to hit the track?</h6>
+
+                <h1>
+                    <i>JOIN THE CLUB</i>
+                </h1>
+
+            </div>
+
+        </section>
+
+        <section class="registration-section">
+
+            <form class="registration-card" id="registrationForm" action="#" method="post">
+
+                <h2>APU Karting Club Registration</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="experience">Karting Experience:</label>
+
+                <select id="experience" name="experience">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <label for="message">Why do you want to join?</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                ></textarea>
+
+                <button type="submit">
+                    REGISTER
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <img
+                    src="Images/kartingclublogo.png"
+                    alt="APU Karting Club Logo"
+                >
+
+                <h3>APU Karting Club</h3>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <p>Email: apukarting@apu.edu.my</p>
+
+                <p>Instagram: @apu.karting</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 APU Karting Club. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+<!-- JavaScript for registration form -->
+<script>
+
+    // When the form is submitted
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+        // Stop the page from refreshing
+        event.preventDefault();
+
+        // Get the user's name
+        let name = document.getElementById("name").value;
+
+        // Show a thank-you message
+        alert("Thank you, " + name + "! Your APU Karting Club registration has been submitted.");
+
+        // Clear the form
+        this.reset();
+
+    });
+
+</script>
+
+</body>
+
+</html>
