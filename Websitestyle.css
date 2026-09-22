@@ -313,6 +313,9 @@ nav p{
     color: white;
 }
 
+.aboutus1 strong{
+    font-size: 1.5rem;
+}
 .aboutus1 h1{
     font-family: "Bebas Neue",sans-serif;
     color:rgb(182, 5, 5);
