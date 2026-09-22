@@ -330,8 +330,9 @@ nav p{
     padding:20px;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: rgb(182, 5, 5);
     margin-top: 25px;
+    font-family: "Bebas Neue",sans-serif;
 }
 
 .aboutusmissions{
@@ -360,5 +361,6 @@ nav p{
     padding-top: 50px;
     font-family: "Oswald",sans-serif;
     font-size: 1.2rem;
+    color:white;
 }
 /*#endregion*/
