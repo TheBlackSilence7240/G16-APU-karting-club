@@ -371,3 +371,36 @@ nav p{
     color:white;
 }
 /*#endregion*/
+/*#region Training schedule--------------------------------------------------------------------*/
+.training{
+    background-color: rgba(0,0,0,0.9);
+    margin:3% 5% 3% 5%;
+    color:white;
+    padding:5%;
+    align-content: center;
+    justify-content: center;
+}
+.training h1{
+    color:rgb(182, 5, 5);
+    font-family: "Bebas Neue",sans-serif;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 4rem;
+}
+.training table{
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    border-collapse: collapse;
+    width:90%;
+    height:80%;
+}
+
+.training th, td {
+    border: 2px solid rgb(182, 5, 5);
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Oswald",sans-serif;
+    font-size: 1.5rem;
+}
+/*#endregion*/
