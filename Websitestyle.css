@@ -69,6 +69,38 @@ nav p{
     color: rgb(161, 20, 20);
 }
 
+.dropdown{
+    position: relative;
+    color:white;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(161, 20, 20);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 /*Hero Image-----------------------------------------------------------------------*/
 
 .hero{
