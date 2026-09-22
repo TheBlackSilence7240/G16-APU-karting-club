@@ -258,6 +258,7 @@ nav p{
     padding-top: 10px;
 }
 .highlightcontainer{
+    max-width: 90%;
     padding: 25px;
     align-items:center;
     display: grid;
