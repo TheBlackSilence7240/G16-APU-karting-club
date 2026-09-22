@@ -42,10 +42,6 @@ body{
     text-decoration: none;
     
 }
-
-.NavLogo:hover{
-    color: rgb(161, 20, 20);
-}
 .NavLogo img {
     width: 100px;
     height: 100px;
