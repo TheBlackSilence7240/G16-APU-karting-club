@@ -3,23 +3,23 @@
 
 
 
-/*Used to get rid of the annoying edges---------------------------------------------*/
+/*#region Used to get rid of the annoying edges(HTML set)--------------------------------------*/
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
-/*Background stuff-------------------------------------------------------------------*/
+/*#endregion*/
+/*#region Background stuff---------------------------------------------------------------------*/
 
 body{
     background-color: rgb(20, 36, 36);
     background-image: url("Images/backgroundmainimage.jpeg");
     background-size: cover;
 }
-
-/*Nav bar no shit sherlock----------------------------------------------------------*/
+/*#endregion*/
+/*#region Nav bar no shit sherlock-------------------------------------------------------------*/
 
 .siteheader {
     height:80px;
@@ -100,8 +100,8 @@ nav p{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-
-/*Hero Image-----------------------------------------------------------------------*/
+/*#endregion*/
+/*#region Hero Image---------------------------------------------------------------------------*/
 
 .hero{
     width: 100%;
@@ -161,8 +161,8 @@ nav p{
     transform: translateY(-3px);
     box-shadow: 0 5px 20px rgba(24, 24, 24, 0.55);
 }
-
-/*Why join us section------------------------------------------------------------------*/
+/*#endregion*/
+/*#region Why join us section------------------------------------------------------------------*/
 
 .whyjoinus{
     background-color: black;
@@ -178,7 +178,8 @@ nav p{
     color:rgba(182,5,5);
     font-family: "Bebas Neue",sans-serif;
 }
-/*Student quickportal section----------------------------------------------------------*/
+/*#endregion*/
+/*#region Student quickportal section----------------------------------------------------------*/
 
 .studentquickportal{
     padding-top: 50px;
@@ -235,8 +236,8 @@ nav p{
     color: white;
     padding:7px;
 }
-
-/*Highlights section*/
+/*#endregion*/
+/*#region Highlights section-------------------------------------------------------------------*/
 .highlights{
     margin-top:5px;
     padding-top: 25px;
@@ -269,8 +270,8 @@ nav p{
     object-fit: cover;
     display: block;
 }
-
-/*footer*/
+/*#endregion*/
+/*#region footer-------------------------------------------------------------------------------*/
 .sitefooter{
     background-image: url(Images/navbarbg.png);
     color:white;
@@ -298,12 +299,65 @@ nav p{
     text-align: center;
     font-size: 0.9rem;
 }
-
-/*About Us page*/
+/*#endregion*/
+/*#region About Us page------------------------------------------------------------------------*/
 .aboutus1 {
     background:black;
-    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding:20px;
+    border: 1px solid rgba(182,5,5);
     text-align: center;
     justify-content: center;
     color: white;
 }
+
+.aboutus1 h1{
+    font-family: "Bebas Neue",sans-serif;
+    color:rgb(182, 5, 5);
+    font-size: xx-large;
+    border-bottom: 2px solid rgb(182, 5, 5);
+}
+
+.aboutus1 p{
+    font-family: "Oswald",sans-serif;
+    font-size: large;
+}
+
+.aboutus2 {
+    background:linear-gradient(rgba(0,0,0,0.9)50%,rgba(0,0,0,0.5)100%);
+    padding:20px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.aboutusmissions{
+    display: flex;
+    gap:1%;
+}
+
+.aboutusmissionsstuff{
+    flex:1;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    margin:5px;
+    padding:20px 2% 10% 2%;
+    background:linear-gradient(rgba(182,5,5,0.5)0%,rgba(0, 0, 0, 0.2)90%)
+}
+
+.aboutusmissionsstuff h3{
+    padding: 10px 0 5px 0;
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 2rem;
+    color:rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+}
+
+.aboutusmissionsstuff p{
+    padding-top: 50px;
+    font-family: "Oswald",sans-serif;
+    font-size: 1.2rem;
+}
+/*#endregion*/
