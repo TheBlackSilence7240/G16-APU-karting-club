@@ -298,3 +298,12 @@ nav p{
     text-align: center;
     font-size: 0.9rem;
 }
+
+/*About Us page*/
+.aboutus1 {
+    background:black;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
