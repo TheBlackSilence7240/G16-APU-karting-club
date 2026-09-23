@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karting Club - Events</title>
+    <link href="Websitestyle.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .events-wrap {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-left: 10px solid rgba(172, 23, 23, 0.8);
+            padding: 60px 25px 80px;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .events-intro {
+            max-width: 750px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .events-intro h1 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 3rem;
+            margin: 0 0 10px;
+        }
+
+        .events-intro p {
+            color: white;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .events-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .event-card {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: linear-gradient(135deg, rgb(38, 38, 38), rgb(20, 20, 20));
+            border: 2px solid rgb(100, 20, 20);
+            border-left: 8px solid rgb(161, 20, 20);
+            padding: 25px;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .event-card:hover {
+            transform: translateX(8px);
+            border-color: rgb(182, 5, 5);
+            box-shadow: 0 8px 25px rgba(161, 20, 20, 0.5);
+        }
+
+        .event-date {
+            flex: 0 0 110px;
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            background: rgb(161, 20, 20);
+            color: white;
+            padding: 15px 10px;
+            border-radius: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .event-date .day {
+            display: block;
+            font-size: 2.8rem;
+            line-height: 1;
+        }
+
+        .event-date .month {
+            display: block;
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            margin-top: 5px;
+        }
+
+        .event-details {
+            flex: 1;
+        }
+
+        .event-details h3 {
+            color: rgb(230, 30, 30);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            margin: 0 0 8px;
+        }
+
+        .event-details .event-meta {
+            color: rgb(253, 57, 57);
+            font-size: 0.95rem;
+            margin: 0 0 10px;
+        }
+
+        .event-details p {
+            color: #ddd;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .event-number {
+            color: #777;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            padding-left: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .events-intro h1 {
+                font-size: 2.5rem;
+            }
+
+            .event-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .event-date {
+                width: 100px;
+            }
+
+            .event-number {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<header class="siteheader">
+
+    <a class="NavLogo" href="MainPage.html">
+        <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+        <span>APU Karting Club</span>
+    </a>
+
+    <nav>
+
+        <a href="MainPage.html">HOME</a>
+        <p>|</p>
+
+        <div class="dropdown">
+            <span class="dropbtn">ABOUT ▼</span>
+
+            <div class="dropdown-content">
+                <a href="aboutus.html">Our Club</a>
+                <a href="staff.html">Our Staff</a>
+                <a href="Equipment.html">Equipment</a>
+                <a href="rules.html">Rules</a>
+            </div>
+        </div>
+
+        <p>|</p>
+
+        <div class="dropdown">
+            <span class="dropbtn">ACTIVITIES ▼</span>
+
+            <div class="dropdown-content">
+                <a href="training.html">Training</a>
+                <a href="events.html">Events/Tournaments</a>
+            </div>
+        </div>
+
+        <p>|</p>
+
+        <a href="gallery.html">GALLERY</a>
+
+        <p>|</p>
+
+        <div class="dropdown">
+            <span class="dropbtn">FORMS ▼</span>
+
+            <div class="dropdown-content">
+                <a href="registrationform.html">Registration</a>
+                <a href="enquiryform.html">Enquiry</a>
+                <a href="contactform.html">Contact</a>
+            </div>
+        </div>
+
+        <p>|</p>
+
+        <a href="Contact.html">CONTACT US</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="events-wrap">
+
+        <div class="events-intro">
+
+            <h1>UPCOMING EVENTS</h1>
+
+            <p>
+                Check out our upcoming races, tournaments, and club
+                meetups. Come race with us and show off your skills
+                on the track!
+            </p>
+
+        </div>
+
+
+        <div class="events-list">
+
+            <div class="event-card">
+
+                <div class="event-date">
+                    <span class="day">14</span>
+                    <span class="month">OCT</span>
+                </div>
+
+                <div class="event-details">
+
+                    <h3>Club Time Trials</h3>
+
+                    <p class="event-meta">
+                        5:00 PM · Sepang Karting Circuit
+                    </p>
+
+                    <p>
+                        Members race the clock for the fastest lap
+                        of the month. Open to all skill levels.
+                    </p>
+
+                </div>
+
+                <div class="event-number">
+                    01
+                </div>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-date">
+                    <span class="day">02</span>
+                    <span class="month">NOV</span>
+                </div>
+
+                <div class="event-details">
+
+                    <h3>Inter-Club Championship</h3>
+
+                    <p class="event-meta">
+                        All Day · Batu Tiga Karting Circuit
+                    </p>
+
+                    <p>
+                        APU Karting Club goes head-to-head against
+                        other university clubs for the championship title.
+                    </p>
+
+                </div>
+
+                <div class="event-number">
+                    02
+                </div>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-date">
+                    <span class="day">20</span>
+                    <span class="month">NOV</span>
+                </div>
+
+                <div class="event-details">
+
+                    <h3>New Members Meetup</h3>
+
+                    <p class="event-meta">
+                        6:30 PM · APU Campus
+                    </p>
+
+                    <p>
+                        A casual meetup for new and prospective members
+                        to learn about the club and meet the team.
+                    </p>
+
+                </div>
+
+                <div class="event-number">
+                    03
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Old Footer -->
+<footer class="sitefooter">
+
+    <img src="Images/kartingclublogo.png">
+
+    <h3>KARTING CLUB</h3>
+
+    <p>
+        Experience the thrill of speed with our community
+    </p>
+
+    <div class="footerbottom">
+
+        <p>
+            © 2026 Karting Club. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
