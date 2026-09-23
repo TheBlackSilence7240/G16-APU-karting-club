@@ -120,6 +120,17 @@
         .contact-card a {
             color: white;
         }
+
+        /* Note: this Instagram card is an <a> instead of a <div> so the
+           whole box is clickable, not just the "@apu.karting" text.
+           These rules remove the default blue/underline link look so
+           it still matches the other cards. */
+        .contact-card.instagram-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 
 <body>
@@ -196,15 +207,15 @@
                 <p>apukarting@apu.edu.my</p>
             </div>
 
-            <div class="contact-card">
+            <!-- Whole card is a link so clicking
+                 anywhere on the box opens Instagram -->
+
+            <a href="https://www.instagram.com/apu.karting/" target="_blank" rel="noopener"
+               class="contact-card instagram-link">
                 <img src="Images/instagram.jpg" alt="Instagram" class="contact-icon">
                 <h3>Instagram</h3>
-                <p>
-                    <a href="https://www.instagram.com/apu.karting/" target="_blank" rel="noopener">
-                        @apu.karting
-                    </a>
-                </p>
-            </div>
+                <p>@apu.karting</p>
+            </a>
 
             <div class="contact-card">
                 <span class="icon">🏁</span>

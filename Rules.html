@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU Karting Club - Club Rules</title>
+    <link href="Websitestyle.css" rel="stylesheet" type="text/css">
+
+    <!-- css -->
+    <style>
+        .rules-hero {
+            width: 100%;
+            min-height: 30vh;
+            background-image:
+                linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.70) 55%, rgba(0,0,0,0.15) 100%),
+                url("Images/rulesPic.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 3rem 4%;
+            display: flex;
+            align-items: center;
+        }
+
+        .rules-hero-content {
+            color: white;
+            font-family: "Oswald", sans-serif;
+        }
+
+        .rules-hero-content h6 {
+            color: rgb(253, 57, 57);
+            font-size: small;
+            border-left: 5px solid rgb(161, 20, 20);
+            padding-left: 20px;
+        }
+
+        .rules-hero-content h1 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 3rem;
+            border-left: 5px solid rgb(161, 20, 20);
+            padding-left: 20px;
+            margin-top: 0.25rem;
+        }
+
+        .rules-wrap {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-left: 10px solid rgba(172, 23, 23, 0.8);
+            padding: 50px 25px 70px;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .rules-intro {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .rules-intro p {
+            color: rgb(253, 57, 57);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .rules-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .rules-card {
+            flex: 1;
+            min-width: 260px;
+            border: 5px solid rgb(161, 20, 20);
+            background: rgb(34, 34, 34);
+            padding: 25px 25px 30px;
+        }
+
+        .rules-card h3 {
+            color: rgba(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgb(161, 20, 20);
+            padding-bottom: 8px;
+        }
+
+        .rules-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rules-card li {
+            color: white;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .rules-card li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 8px;
+            height: 8px;
+            background: rgb(253, 57, 57);
+        }
+    </style>
+</head>
+
+<body>
+<!--Navigation bar stuff (same structure/classes as MainPage.html so it matches)-->
+<header class="siteheader">
+        <a class="NavLogo" href="MainPage.html">
+            <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+            <span>APU Karting Club</span>
+        </a>
+    <nav>
+        <a href="MainPage.html">HOME</a>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">ABOUT ▼</span>
+            <div class="dropdown-content">
+                <a href="aboutus.html">Our Club</a>
+                <a href="staff.html">Our Staff</a>
+                <a href="Equipment.html">Equipment</a>
+                <a href="rules.html">Rules</a>
+            </div>
+        </div>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">ACTIVITIES ▼</span>
+            <div class="dropdown-content">
+                <a href="training.html">Training</a>
+                <a href="events.html">Events/Tournaments</a>
+            </div>
+        </div>
+        <p>|</p>
+        <a href="gallery.html">GALLERY</a>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">FORMS ▼</span>
+            <div class="dropdown-content">
+                <a href="registrationform.html">Registration</a>
+                <a href="enquiryform.html">Enquiry</a>
+                <a href="contactform.html">Contact</a>
+            </div>
+        </div>
+        <p>|</p>
+        <a href="Contact.html">CONTACT US</a>
+    </nav>
+
+    </header>
+
+    <main>
+        <!--Hero-style banner, matches other pages-->
+        <section class="rules-hero">
+            <div class="rules-hero-content">
+                <h6>Safety first, speed second:</h6>
+                <h1><i>CLUB RULES</i></h1>
+            </div>
+        </section>
+
+        <!--Rules content-->
+        <section class="rules-wrap">
+            <div class="rules-intro">
+                <p>
+                    To keep every session safe and fun for everyone, all members
+                    are expected to follow these rules at all times.
+                </p>
+            </div>
+
+            <div class="rules-groups">
+                <div class="rules-card">
+                    <h3>Safety Rules</h3>
+                    <ul>
+                        <li>Helmets and provided safety gear must be worn at all times on track.</li>
+                        <li>No overtaking under yellow flag conditions.</li>
+                        <li>Follow marshal and advisor instructions immediately.</li>
+                        <li>Report any kart or track issues right away.</li>
+                        <li>No passengers — one driver per kart.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-card">
+                    <h3>General Conduct</h3>
+                    <ul>
+                        <li>Respect fellow members, advisors, and staff at all times.</li>
+                        <li>Reckless or dangerous driving will result in a session ban.</li>
+                        <li>Arrive on time for scheduled training sessions.</li>
+                        <li>Keep the pit and paddock area clean and tidy.</li>
+                        <li>No alcohol or substances before or during sessions.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-card">
+                    <h3>Membership</h3>
+                    <ul>
+                        <li>Membership is open to all registered APU students.</li>
+                        <li>Members must complete the registration form before joining sessions.</li>
+                        <li>Attendance at the safety briefing is required before your first session.</li>
+                        <li>Repeated rule violations may result in suspension from the club.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--feet details-->
+<footer class="sitefooter">
+        <img src="Images/kartingclublogo.png">
+        <h3>KARTING CLUB</h3>
+        <p>Experience the thrill of speed with our community</p>
+    <div class="footerbottom">
+        <p>© 2026 Karting Club. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
