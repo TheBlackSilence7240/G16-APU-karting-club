@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karting Club - Contact Form</title>
+
+    <link rel="stylesheet" href="Websitestyle.css">
+
+    <style>
+
+        .contactform-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-left: 10px solid rgba(172, 23, 23, 0.8);
+            padding: 50px 25px 70px;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .contactform-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgb(34, 34, 34);
+            border: 5px solid rgb(161, 20, 20);
+            padding: 35px;
+            box-sizing: border-box;
+        }
+
+        .contactform-card h2 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contactform-card label {
+            display: block;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .contactform-card input,
+        .contactform-card select,
+        .contactform-card textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            background: rgb(20, 20, 20);
+            color: white;
+            border: 2px solid rgb(161, 20, 20);
+            font-family: "Oswald", sans-serif;
+        }
+
+        .contactform-card textarea {
+            resize: vertical;
+        }
+
+        .contactform-card button {
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: rgb(161, 20, 20);
+            color: white;
+            border: none;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .contactform-card button:hover {
+            background: rgb(182, 5, 5);
+        }
+
+        .site-footer {
+            background: #080808;
+            border-top: 4px solid rgb(161, 20, 20);
+            color: white;
+            font-family: "Oswald", sans-serif;
+            padding: 35px 5% 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .footer-logo h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .footer-contact {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 25px;
+            padding: 15px 0;
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="siteheader">
+
+        <a class="NavLogo" href="MainPage.html">
+            <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+            <span>APU Karting Club</span>
+        </a>
+
+    <nav>
+        <a href="MainPage.html">HOME</a>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">ABOUT ▼</span>
+            <div class="dropdown-content">
+                <a href="aboutus.html">Our Club</a>
+                <a href="staff.html">Our Staff</a>
+                <a href="Equipment.html">Equipment</a>
+                <a href="rules.html">Rules</a>
+            </div>
+        </div>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">ACTIVITIES ▼</span>
+            <div class="dropdown-content">
+                <a href="training.html">Training</a>
+                <a href="events.html">Events/Tournaments</a>
+            </div>
+        </div>
+        <p>|</p>
+        <a href="gallery.html">GALLERY</a>
+        <p>|</p>
+        <div class="dropdown">
+            <span class="dropbtn">FORMS ▼</span>
+            <div class="dropdown-content">
+                <a href="registrationform.html">Registration</a>
+                <a href="enquiryform.html">Enquiry</a>
+                <a href="contactform.html">Contact</a>
+            </div>
+        </div>
+        <p>|</p>
+        <a href="Contact.html">CONTACT US</a>
+    </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="contactform-section">
+
+            <form class="contactform-card" id="contactForm" action="#" method="post">
+
+                <h2>Contact APU Karting Club</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    SEND MESSAGE
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Old Footer -->
+<footer class="sitefooter">
+
+    <img src="Images/kartingclublogo.png">
+
+    <h3>KARTING CLUB</h3>
+
+    <p>
+        Experience the thrill of speed with our community
+    </p>
+
+    <div class="footerbottom">
+
+        <p>
+            © 2026 Karting Club. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!--java shi-->
+ <script src="contact.js"></script>
+
+</body>
+
+</html>
