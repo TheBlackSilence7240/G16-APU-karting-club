@@ -1,5 +1,5 @@
 // When the form is submitted
-document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit", function(event) {
 
     // Stop the page from refreshing
     event.preventDefault();
@@ -7,8 +7,6 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
     // Get the user's information
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
-    let studentid = document.getElementById("studentid").value.trim();
-    let category = document.getElementById("category").value;
     let subject = document.getElementById("subject").value.trim();
     let message = document.getElementById("message").value.trim();
 
@@ -30,32 +28,20 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
         return;
     }
 
-    // Check Student ID
-    if (studentid === "") {
-        alert("Please enter your student ID.");
-        return;
-    }
-
-    // Check Enquiry Category
-    if (category === "") {
-        alert("Please select an enquiry category.");
-        return;
-    }
-
     // Check Subject
     if (subject === "") {
         alert("Please enter a subject.");
         return;
     }
 
-    // Check Enquiry Message
+    // Check Message
     if (message === "") {
-        alert("Please enter your enquiry.");
+        alert("Please enter your message.");
         return;
     }
 
     // Show a thank-you message
-    alert("Thanks, " + name + "! Your enquiry has been sent to APU Karting Club.");
+    alert("Thanks, " + name + "! Your message has been sent to APU Karting Club.");
 
     // Clear the form
     this.reset();

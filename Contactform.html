@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Karting Club - Contact Form</title>
-
-    <link rel="stylesheet" href="Websitestyle.css">
+    <title>APU Karting Club - Contact Form</title>
+    <link href="Websitestyle.css" rel="stylesheet" type="text/css">
 
     <style>
-
         .contactform-section {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             border-left: 10px solid rgba(172, 23, 23, 0.8);
-            padding: 50px 25px 70px;
+            padding: 60px 25px 80px;
             font-family: "Oswald", sans-serif;
             color: white;
+        }
+
+        .contactform-intro {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .contactform-intro h1 {
+            color: rgb(182, 5, 5);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 3rem;
+            margin: 0 0 10px;
+        }
+
+        .contactform-intro p {
+            color: white;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 0;
         }
 
         .contactform-card {
@@ -26,126 +42,89 @@
             border: 5px solid rgb(161, 20, 20);
             padding: 35px;
             box-sizing: border-box;
-        }
-
-        .contactform-card h2 {
-            color: rgb(182, 5, 5);
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
         }
 
         .contactform-card label {
             display: block;
             color: white;
-            margin-top: 15px;
-            margin-bottom: 5px;
+            font-size: 1rem;
+            margin-bottom: 8px;
         }
 
         .contactform-card input,
-        .contactform-card select,
         .contactform-card textarea {
             width: 100%;
             padding: 12px;
+            margin-bottom: 20px;
             box-sizing: border-box;
             background: rgb(20, 20, 20);
             color: white;
             border: 2px solid rgb(161, 20, 20);
             font-family: "Oswald", sans-serif;
+            font-size: 1rem;
         }
 
         .contactform-card textarea {
             resize: vertical;
+            min-height: 130px;
         }
 
-        .contactform-card button {
-            display: block;
-            width: 100%;
-            margin-top: 25px;
-            padding: 14px;
+        .contactform-card input:focus,
+        .contactform-card textarea:focus {
+            outline: none;
+            border-color: rgb(230, 30, 30);
+        }
+
+        .contactform-card input[type="submit"] {
             background: rgb(161, 20, 20);
             color: white;
             border: none;
+            padding: 14px;
             font-family: "Bebas Neue", sans-serif;
             font-size: 1.2rem;
             cursor: pointer;
+            margin-bottom: 0;
         }
 
-        .contactform-card button:hover {
-            background: rgb(182, 5, 5);
+        .contactform-card input[type="submit"]:hover {
+            background: rgb(190, 25, 25);
         }
 
-        .site-footer {
-            background: #080808;
-            border-top: 4px solid rgb(161, 20, 20);
-            color: white;
-            font-family: "Oswald", sans-serif;
-            padding: 35px 5% 0;
-        }
+        @media (max-width: 600px) {
+            .contactform-section {
+                padding: 40px 15px 60px;
+            }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
+            .contactform-intro h1 {
+                font-size: 2.5rem;
+            }
 
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .footer-logo img {
-            width: 55px;
-            height: 55px;
-            object-fit: contain;
-        }
-
-        .footer-logo h3 {
-            color: white;
-            margin: 0;
-            font-size: 1.3rem;
-        }
-
-        .footer-contact {
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        .footer-contact p {
-            margin: 5px 0;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            border-top: 1px solid #333;
-            margin-top: 25px;
-            padding: 15px 0;
-            color: #aaa;
-            font-size: 0.85rem;
+            .contactform-card {
+                padding: 25px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header class="siteheader">
+<!-- Navigation bar -->
+<header class="siteheader">
 
-        <a class="NavLogo" href="MainPage.html">
-            <img src="Images/kartingclublogo.png" alt="Karting Club logo">
-            <span>APU Karting Club</span>
-        </a>
+    <a class="NavLogo" href="MainPage.html">
+        <img src="Images/kartingclublogo.png" alt="Karting Club logo">
+        <span>APU Karting Club</span>
+    </a>
 
     <nav>
+
         <a href="MainPage.html">HOME</a>
         <p>|</p>
+
         <div class="dropdown">
             <span class="dropbtn">ABOUT ▼</span>
+
             <div class="dropdown-content">
                 <a href="aboutus.html">Our Club</a>
                 <a href="staff.html">Our Staff</a>
@@ -153,69 +132,117 @@
                 <a href="rules.html">Rules</a>
             </div>
         </div>
+
         <p>|</p>
+
         <div class="dropdown">
             <span class="dropbtn">ACTIVITIES ▼</span>
+
             <div class="dropdown-content">
                 <a href="training.html">Training</a>
                 <a href="events.html">Events/Tournaments</a>
             </div>
         </div>
+
         <p>|</p>
+
         <a href="gallery.html">GALLERY</a>
+
         <p>|</p>
+
         <div class="dropdown">
             <span class="dropbtn">FORMS ▼</span>
+
             <div class="dropdown-content">
                 <a href="registrationform.html">Registration</a>
                 <a href="enquiryform.html">Enquiry</a>
                 <a href="contactform.html">Contact</a>
             </div>
         </div>
+
         <p>|</p>
+
         <a href="Contact.html">CONTACT US</a>
+
     </nav>
 
+</header>
 
-    </header>
 
-    <main>
+<main>
 
-        <section class="contactform-section">
+    <section class="contactform-section">
 
-            <form class="contactform-card" id="contactForm" action="#" method="post">
+        <div class="contactform-intro">
 
-                <h2>Contact APU Karting Club</h2>
+            <h1>CONTACT FORM</h1>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <p>
+                Prefer to write it down instead of finding us on Instagram or email?
+                Fill in the form below and we'll get back to you as soon as we can.
+            </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        </div>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
+        <!-- id="contactForm" is what contactform.js listens for on submit -->
+        <form class="contactform-card" id="contactForm" action="#" method="post">
 
-                <label for="message">Message:</label>
+            <label for="name">Full Name</label>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                ></textarea>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
 
-                <button type="submit">
-                    SEND MESSAGE
-                </button>
 
-            </form>
+            <label for="email">Email Address</label>
 
-        </section>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
 
-    </main>
 
-    <!-- Old Footer -->
+            <label for="subject">Subject</label>
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter your subject"
+                required
+            >
+
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+
+            <input
+                type="submit"
+                value="SEND MESSAGE"
+            >
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- Old Footer -->
 <footer class="sitefooter">
 
     <img src="Images/kartingclublogo.png">
@@ -237,8 +264,7 @@
 </footer>
 
 <!--java shi-->
- <script src="contact.js"></script>
+<script src="contactform.js"></script>
 
 </body>
-
 </html>
