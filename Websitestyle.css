@@ -27,7 +27,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding: 1rem 4%;
+    padding:3%;
     background:black;
     background-image: url(Images/navbarbg.png);
     font-family: "Oswald",sans-serif;
@@ -38,7 +38,7 @@ body{
     align-items: center;
     gap: 0.5rem;
     color: white;
-    font-weight: 700;
+    font-size: 1.2rem;
     text-decoration: none;
     
 }
@@ -75,20 +75,18 @@ nav p{
     position: relative;
     color:white;
 }
-
+/*relative makes that shit the refrence point(note)*/
 .dropdown-content{
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
     background-color: black;
-    min-width: 160px;
-    z-index: 1000;
+    width:160px;
+    z-index: 10000000000000000000000000000000000000000000000000000;/*CAN WE GET MUCH HIGHER*/
 }
-
+/*absolute places itself below refrence point*/
 .dropdown-content a{
     display: block;
-    padding: 12px 15px;
+    padding:15px;
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
