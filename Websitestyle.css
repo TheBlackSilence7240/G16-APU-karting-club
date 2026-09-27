@@ -450,3 +450,126 @@ nav p{
     background-color: rgba(128, 128, 128, 0.608);
 }
 /*#endregion*/
+/*#region Equipment & News pages---------------------------------------------------------------*/
+.page-wrap {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-left: 10px solid rgba(172, 23, 23, 0.8);
+    padding: 60px 25px 80px;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.page-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.page-intro h1 {
+    color: rgb(182, 5, 5);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin: 0 0 10px;
+}
+
+.page-intro p {
+    color: white;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Equipment Grid */
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.equipment-card {
+    background: rgb(34, 34, 34);
+    border: 5px solid rgb(161, 20, 20);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(161, 20, 20, 0.5);
+}
+
+.equipment-card h3 {
+    color: rgb(230, 30, 30);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin: 15px 0 10px;
+}
+
+.equipment-card p {
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* News List */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background: linear-gradient(135deg, rgb(38, 38, 38), rgb(20, 20, 20));
+    border: 2px solid rgb(100, 20, 20);
+    border-left: 8px solid rgb(161, 20, 20);
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.news-card a{
+    color: rgb(253, 57, 57);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.news-date {
+    color: rgb(253, 57, 57);
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.news-card h3 {
+    color: rgb(230, 30, 30);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+
+.news-card p {
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Images */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid rgb(161, 20, 20);
+    margin-bottom: 15px;
+    display: block;
+    background-color: #111;
+}
+/*#endregion*/
