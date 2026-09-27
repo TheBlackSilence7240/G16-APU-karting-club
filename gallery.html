@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karting Club - Gallery</title>
 
-</head>
-<body>
-    <h1>APU Karting Club - Gallery</h1>
-    <hr>
     <style>
 
         
@@ -17,19 +13,78 @@
             color:white;
             font: arial ;
             margin: 0;
-            padding: 20px;
-        }
+            padding: 20px;}
 
         h1 {
             text-align: center;
-            color:white
-        }
+            color:white}
         h2 {
             text-align: center;
-            color: red;
-        }
+            color: red;}
 
         .gallery {
             display: flex;
-            
-        }
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;}
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid white;
+            border-radius: 10px;}
+
+        .gallery img:hover{ 
+            transform:scale(1.05);}
+
+        .caption{
+            text-align: center;
+            margin-top: 8px;
+            color: white;}
+    </style>
+</head>
+
+<body>
+
+    <h1>APU Karting Club - Gallery</h1>
+    <hr>
+    <h2>Karting Highlights</h2>
+
+    <p style="text-align: center;">1
+        Gear Up and experience the speed of APU Karting Club through activities and events
+    </p>
+
+<!-- Gallery -->
+ <div class="gallery">
+
+    <div>
+        <img src="Track.jpg" alt="Karting Track">
+        <p class="caption">Karting Track</p> 
+    </div>
+    <div> 
+        <img src="Event.png" alt="Karting Event"> 
+        <p class="caption">Karting Event</p> 
+    </div> 
+    <div> 
+        <img src="Members.png" alt="Karting Club Members"> 
+        <p class="caption">Club Members</p> 
+    </div> 
+    <div> 
+        <img src="Training.png" alt="Karting Training"> 
+        <p class="caption">Training Session</p> 
+    </div> 
+    <div> 
+        <img src="Racing 1.webp" alt="Kart Racing 1"> 
+        <p class="caption">Racing Action 1</p> 
+    </div> 
+    <div> 
+        <img src="Racing 2.webp" alt="Kart Racing 2"> 
+        <p class="caption">Racing Action 2</p> 
+    </div> 
+</div> 
+<hr> 
+<p style="text-align: center;"> 2026 APU Karting Club </p>
+</body>
+</html>
